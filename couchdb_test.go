@@ -51,7 +51,7 @@ func TestSelectorFind(t *testing.T) {
 		Limit: 10,
 	}
 	couchCli := CouchDB{
-		Host:     "http://112.126.97.169",
+		Host:     "http://127.0.0.1",
 		Port:     "5984",
 		DataBase: "contract_$user$c$c",
 		Args:     args,
@@ -102,7 +102,7 @@ func TestCreateIndex(t *testing.T) {
 		Type: "json",
 	}
 	couchCli := CouchDB{
-		Host:     "http://112.126.97.169",
+		Host:     "http://127.0.0.1",
 		Port:     "5984",
 		DataBase: "contract_$user$c$c",
 		Index:    index,
